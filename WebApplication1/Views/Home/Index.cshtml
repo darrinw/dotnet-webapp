@@ -1,0 +1,63 @@
+﻿@{
+    ViewBag.Title = "Windows Automation Demo";
+}
+<!-- a comment -->
+<!-- Hint for Load Balancer bodyRegex: WINDOWS_AUTOMATION_DEMO -->
+
+<div class="jumbotron">
+    <h2>Test App @ViewBag.ApplicationVersion</h2>
+    <p class="lead">This application is for testing Windows-oriented CI/CD pipelines. </p>
+
+    <h3>Run-time Metadata</h3>
+    <ul>
+        <li>Hostname: @ViewBag.Hostname</li>
+        <li>Environment: @ViewBag.Environment</li>
+        <li>Runtime: @ViewBag.Runtime</li>
+        <li>MVC Version: @ViewBag.MvcVersion</li>
+        <li>CLR Version: @ViewBag.ClrVersion</li>
+    </ul>
+
+    <h3>Build Metadata</h3>
+    <ul>
+        <li>Number: @ViewBag.BuildNumber</li>
+        <li>
+            Hash:
+            <a href="https://github.com/iskandar/aspnet-mvc-sample/commit/@ViewBag.BuildHash"
+               target="_blank">@ViewBag.ShortBuildHash</a>
+        </li>
+        <li>Date: @ViewBag.BuildDate</li>
+        <li>
+            URL:
+            <a href="@ViewBag.BuildUrl" target="_blank">@ViewBag.BuildUrl</a>
+        </li>
+    </ul>
+
+    <h3>Deploy Metadata</h3>
+    <ul>
+        <li>Number: @ViewBag.DeployNumber</li>
+        <li>Date: @ViewBag.DeployDate</li>
+        <li>
+            URL:
+            <a href="@ViewBag.DeployUrl" target="_blank">@ViewBag.DeployUrl</a>
+        </li>
+    </ul>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+            enables a clean separation of concerns and gives you full control over markup
+            for enjoyable, agile development.
+        </p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+    </div>
+</div>
